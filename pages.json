@@ -3,14 +3,33 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				// 页面样式属性，会覆盖全局样式属性
+				// ...
+			}
+		},
+		{
+			"path": "pages/toDoList/toDoList",
+			"style": {
+				"navigationBarTitleText": "toDoList"
 			}
 		}
 	],
+	// 全局样式属性
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uni-Dome",
+		"navigationBarBackgroundColor": "#95A5A6",
+		// 背景颜色，下拉刷新时后面的颜色，默认看不到，所以要开启下拉
+		"backgroundColor": "rgba(170, 85, 255, 0.5)"
+		// "enablePullDownRefresh": true,  // 开启下拉刷新
+	},
+	"tabBar":{
+		"color": "#2C3E50",
+		"selectedColor": "#55789a",
+		"backgroundColor": "#95A5A6",
+		"list":[
+			{ "pagePath": "pages/index/index", "text": "index" },
+			{ "pagePath": "pages/toDoList/toDoList", "text": "toDoList" }
+		]
 	}
 }
