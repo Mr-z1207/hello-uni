@@ -18,18 +18,28 @@
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "uni-Dome",
-		"navigationBarBackgroundColor": "#95A5A6",
+		"navigationBarBackgroundColor": "#7AC5CD",
 		// 背景颜色，下拉刷新时后面的颜色，默认看不到，所以要开启下拉
-		"backgroundColor": "rgba(170, 85, 255, 0.5)"
-		// "enablePullDownRefresh": true,  // 开启下拉刷新
+		"backgroundColor": "#f7f7f7",
+		"enablePullDownRefresh": true  // 开启下拉刷新
 	},
 	"tabBar":{
-		"color": "#2C3E50",
-		"selectedColor": "#55789a",
-		"backgroundColor": "#95A5A6",
+		"color": "#333333",
+		"selectedColor": "#FF6347",
+		"backgroundColor": "#7AC5CD",
 		"list":[
-			{ "pagePath": "pages/index/index", "text": "index" },
-			{ "pagePath": "pages/toDoList/toDoList", "text": "toDoList" }
+			{
+				"pagePath": "pages/index/index",
+				"text": "主页",
+				"iconPath": "static/taberIcon/home.png",
+				"selectedIconPath": "static/taberIcon/home-active.png"
+			},
+			{
+				"pagePath": "pages/toDoList/toDoList",
+				"text": "待办",
+				"iconPath": "static/taberIcon/list.png",
+				"selectedIconPath":"static/taberIcon/list-active.png"
+			}
 		]
 	}
 }
