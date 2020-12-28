@@ -12,6 +12,12 @@
 			"style": {
 				"navigationBarTitleText": "toDoList"
 			}
+		},
+		{
+			"path": "pages/blog/blog",
+			"style": {
+				"navigationBarTitleText": "blog"
+			}
 		}
 	],
 	// 全局样式属性
@@ -28,6 +34,12 @@
 		"selectedColor": "#FF6347",
 		"backgroundColor": "#7AC5CD",
 		"list":[
+			{
+				"pagePath": "pages/blog/blog",
+				"text": "博客",
+				"iconPath": "static/taberIcon/blog.png",
+				"selectedIconPath": "static/taberIcon/blog-active.png"
+			},
 			{
 				"pagePath": "pages/index/index",
 				"text": "主页",

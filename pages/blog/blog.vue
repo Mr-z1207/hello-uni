@@ -1,6 +1,6 @@
 <template>
-	<view class="todolist">
-		
+	<view class="blog">
+		blog
 	</view>
 </template>
 
